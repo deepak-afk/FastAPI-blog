@@ -40,8 +40,6 @@ class Blog (BaseModel):
     published : Optional[bool]
 
 
-
-
 @app.post('/blog')  
 def create_blog(blog : Blog):
     return {'data' : f"blog is created with title {blog.title}"}
